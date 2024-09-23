@@ -1,3 +1,5 @@
+// cはcontextの略
+
 import { Hono } from 'hono'
 import { basicAuth } from 'hono/basic-auth'
 import { View } from './jsx/View'
