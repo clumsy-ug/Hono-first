@@ -13,7 +13,7 @@ app.use('*', prettyJSON())
 app.use(
   '/auth/*',
   basicAuth({
-    username: 'admi',
+    username: 'john',
     password: 'secret'
   })
 )
