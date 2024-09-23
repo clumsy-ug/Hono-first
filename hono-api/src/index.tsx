@@ -37,9 +37,11 @@ app.get('/api/hello', (c) => {
   })
 })
 
-app.get('/posts/:id', (c) => {
-  const page = c.req.query('page')
-  const id = c.req.param('id')
+app.get('/posts/:user_id', (c) => {
+  // const page = c.req.query('page')
+  const page = c.req.query('test')
+  // const id = c.req.param('id')
+  const id = c.req.param('user_id')
   c.header('X-Message', 'Hi!')
   return c.text(`You want see ${page} of ${id}`)
 })
